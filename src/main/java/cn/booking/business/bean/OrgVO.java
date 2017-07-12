@@ -3,12 +3,14 @@ package cn.booking.business.bean;
 import java.io.Serializable;
 
 import org.apache.commons.lang.builder.ReflectionToStringBuilder;
+
+import cn.sdk.bean.BaseBean;
 /**
  * 业务办理单位
  * @author Mbenben
  *
  */
-public class OrgVO implements Serializable {
+public class OrgVO extends BaseBean implements Serializable {
 	/**
 	 * 单位id
 	 */
@@ -33,6 +35,7 @@ public class OrgVO implements Serializable {
 	 * 地理位置坐标
 	 */
 	private String pointy;
+	
 	public String getId() {
 		return id;
 	}

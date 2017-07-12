@@ -1,6 +1,5 @@
 package cn.booking.business.service;
 
-import java.util.LinkedHashMap;
 import java.util.List;
 
 import cn.booking.business.bean.BusinessTypeVO;
@@ -11,33 +10,40 @@ public interface IBookingBusinessService{
 	/**
 	 * 获取车辆类型列表
 	 */
-	public List<IdTypeVO> getCarTypes(LinkedHashMap<String, Object> map) throws Exception;
+	public List<IdTypeVO> getCarTypes() throws Exception;
 	/**
-	 * 获取业务类型
-	 * @param map
+	 * 获取业务类型 
+	 * @param type 业务类型 ‘0’驾驶证业务  ‘1’机动车业务
+	 * @param part 暂不需要传值  0’获取所有业务类型 ‘1’获取可统一接口
+	 * @param arg0
+	 * @param arg1
 	 * @return
 	 * @throws Exception
 	 */
-	public List<BusinessTypeVO> getBusinessTypes(LinkedHashMap<String, Object> map)throws Exception;
+	public List<BusinessTypeVO> getBusinessTypes(String type,String part,String arg0,String arg1)throws Exception;
 	/**
-	 *获取身份证明类型
-	 * @param map
+	 * 获取身份证明类型
+	 * @param businessTypeId 业务类型ID 不能为空
+	 * @param arg0 保留字段0
+	 * @param arg1 保留字段1
 	 * @return
 	 * @throws Exception
 	 */
-	public List<IdTypeVO>getIdTypes(LinkedHashMap<String, Object> map)throws Exception;
+	public IdTypeVO getIdTypes(String businessTypeId,String arg0,String arg1)throws Exception;
 	/**
 	 * 根据单位ID获取单位详细信息
-	 * @param map
+	 * @param orgId 单位ID 不能为空
 	 * @return
 	 * @throws Exception
 	 */
-	public OrgVO findOrgByOrgId(LinkedHashMap<String, Object> map)throws Exception;
+	public OrgVO findOrgByOrgId(String orgId)throws Exception;
 	/**
 	 * 根据业务类型获取可预约单位
-	 * @param map
+	 * @param btId 业务类型ID 不能为空
+	 * @param arg0 保留字段0
+	 * @param arg1 保留字段1
 	 * @return
 	 * @throws Exception
 	 */
-	public OrgVO getOrgsByBusinessTypeId(LinkedHashMap<String, Object> map)throws Exception;
+	public OrgVO getOrgsByBusinessTypeId(String btId,String arg0,String arg1) throws Exception;
 }
