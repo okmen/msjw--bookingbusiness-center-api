@@ -5,6 +5,7 @@ import java.util.concurrent.ExecutionException;
 
 import cn.booking.business.bean.AppTimeHelper;
 import cn.booking.business.bean.BusinessTypeVO;
+import cn.booking.business.bean.CarTypeVO;
 import cn.booking.business.bean.IdTypeVO;
 import cn.booking.business.bean.OrgVO;
 
@@ -12,7 +13,7 @@ public interface IBookingBusinessService{
 	/**
 	 * 获取车辆类型列表
 	 */
-	public List<IdTypeVO> getCarTypes() throws Exception;
+	public List<CarTypeVO> getCarTypes() throws Exception;
 	/**
 	 * 获取业务类型 
 	 * @param type 业务类型 ‘0’驾驶证业务  ‘1’机动车业务
