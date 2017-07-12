@@ -1,11 +1,13 @@
 package cn.booking.business.service;
 
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
 import cn.booking.business.bean.AppTimeHelper;
 import cn.booking.business.bean.BusinessTypeVO;
 import cn.booking.business.bean.CarTypeVO;
+import cn.booking.business.bean.CreateVehicleInfoVo;
 import cn.booking.business.bean.IdTypeVO;
 import cn.booking.business.bean.OrgVO;
 import cn.booking.business.bean.SmsInfoVO;
@@ -86,4 +88,13 @@ public interface IBookingBusinessService{
 	 * @throws Exception
 	 */
 	public SmsInfoVO simpleSendMessage(String mobile,String idType,String lx,String ip,String bookerType,String bookerName,String bookerIdNumber,String idNumber,String codes)throws Exception;
+
+	/** @Title: createVehicleInfo_JD06
+	 * @Description: TODO(换领机动车登记证书)
+	 * @param @param vehicleInfoVo
+	 * @param @return    参数
+	 * @return Map<String,String>    返回类型
+	 * @throws
+	 */
+	public Map<String, String> createVehicleInfo_JD06(CreateVehicleInfoVo vehicleInfoVo)throws Exception;
 }
