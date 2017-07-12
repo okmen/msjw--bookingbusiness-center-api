@@ -32,7 +32,7 @@ public interface IBookingBusinessService{
 	 * @return
 	 * @throws Exception
 	 */
-	public IdTypeVO getIdTypes(String businessTypeId,String arg0,String arg1)throws Exception;
+	public List<IdTypeVO> getIdTypes(String businessTypeId,String arg0,String arg1)throws Exception;
 	/**
 	 * 根据单位ID获取单位详细信息
 	 * @param orgId 单位ID 不能为空
@@ -48,7 +48,7 @@ public interface IBookingBusinessService{
 	 * @return
 	 * @throws Exception
 	 */
-	public OrgVO getOrgsByBusinessTypeId(String btId,String arg0,String arg1) throws Exception;
+	public List<OrgVO> getOrgsByBusinessTypeId(String btId,String arg0,String arg1) throws Exception;
 	/**
 	 * 获取可预约时间段
 	 * @param date 预约日期    不能为空
