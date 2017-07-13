@@ -11,6 +11,7 @@ import cn.booking.business.bean.CreateVehicleInfoVo;
 import cn.booking.business.bean.IdTypeVO;
 import cn.booking.business.bean.OrgVO;
 import cn.booking.business.bean.SmsInfoVO;
+import cn.sdk.bean.BaseBean;
 
 public interface IBookingBusinessService{
 	/**
@@ -89,12 +90,14 @@ public interface IBookingBusinessService{
 	 */
 	public SmsInfoVO simpleSendMessage(String mobile,String idType,String lx,String ip,String bookerType,String bookerName,String bookerIdNumber,String idNumber,String codes)throws Exception;
 
-	/** @Title: createVehicleInfo_JD06
-	 * @Description: TODO(换领机动车登记证书)
+	/**
+	 * @Title: createVehicleInfo
+	 * @Description: TODO(机动车预约信息写入)
 	 * @param @param vehicleInfoVo
-	 * @param @return    参数
-	 * @return Map<String,String>    返回类型
+	 * @param @return
+	 * @param @throws Exception    参数
+	 * @return BaseBean    返回类型
 	 * @throws
 	 */
-	public Map<String, String> createVehicleInfo_JD06(CreateVehicleInfoVo vehicleInfoVo)throws Exception;
+	public BaseBean createVehicleInfo(CreateVehicleInfoVo vehicleInfoVo)throws Exception;
 }
