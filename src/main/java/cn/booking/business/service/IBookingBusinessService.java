@@ -1,16 +1,16 @@
 package cn.booking.business.service;
 
 import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ExecutionException;
 
 import cn.booking.business.bean.AppTimeHelper;
 import cn.booking.business.bean.BusinessTypeVO;
 import cn.booking.business.bean.CarTypeVO;
 import cn.booking.business.bean.CreateVehicleInfoVo;
+import cn.booking.business.bean.DriveInfoVO;
 import cn.booking.business.bean.IdTypeVO;
 import cn.booking.business.bean.OrgVO;
 import cn.booking.business.bean.SmsInfoVO;
+import cn.booking.business.bean.VehicleInfoVO;
 import cn.sdk.bean.BaseBean;
 
 public interface IBookingBusinessService{
@@ -90,6 +90,7 @@ public interface IBookingBusinessService{
 	 */
 	public SmsInfoVO simpleSendMessage(String mobile,String idType,String lx,String ip,String bookerType,String bookerName,String bookerIdNumber,String idNumber,String codes)throws Exception;
 
+
 	/**
 	 * @Title: createVehicleInfo
 	 * @Description: TODO(机动车预约信息写入)
@@ -100,4 +101,36 @@ public interface IBookingBusinessService{
 	 * @throws
 	 */
 	public BaseBean createVehicleInfo(CreateVehicleInfoVo vehicleInfoVo)throws Exception;
+
+	/**
+	 * 取消预约
+	 * @param businessType 业务类型 必填 ‘1’驾驶证业务 ‘2’机动车业务
+	 * @param bookNumber 预约号
+	 * @param mobile 手机号
+	 * @return
+	 * @throws Exception
+	 */
+	public SmsInfoVO cancel(String businessType,String bookNumber,String mobile)throws Exception;
+	/**
+	 * 获取驾驶证预约信息
+	 * @param bookerNumber 预约号 必填
+	 * @param idNumber 证件号码 必填
+	 * @param businessTypeId 业务类型ID
+	 * @param organizationId 预约单位ID
+	 * @return
+	 * @throws Exception
+	 */
+	public DriveInfoVO getDriveInfo(String bookerNumber,String idNumber,String businessTypeId,String organizationId)throws Exception;
+	/**
+	 * 获取机动车预约信息 
+	 * @param bookerNumber 预约号  必填
+	 * @param idNumber 证件号码  必填
+	 * @param platNumber 车牌号
+	 * @param businessTypeId 业务类型ID
+	 * @param organizationId 预约单位ID
+	 * @return
+	 * @throws Exception
+	 */
+	public VehicleInfoVO getVehicleInfo(String bookerNumber,String idNumber,String platNumber,String businessTypeId,String organizationId)throws Exception;
+
 }
