@@ -6,6 +6,10 @@ import org.apache.commons.lang.builder.ReflectionToStringBuilder;
 
 public class SmsInfoVO implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7332642213239670975L;
 	private String code;
 	private String msg;
 	private String result;

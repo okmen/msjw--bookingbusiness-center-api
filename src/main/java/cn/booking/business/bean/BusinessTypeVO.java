@@ -15,9 +15,13 @@ import com.alibaba.fastjson.JSON;
 
 import cn.sdk.bean.BaseBean;
 
-public class BusinessTypeVO extends BaseBean implements Serializable {
+public class BusinessTypeVO implements Serializable {
 
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2279784740624919293L;
 	/**
 	 * 业务类型ID
 	 */

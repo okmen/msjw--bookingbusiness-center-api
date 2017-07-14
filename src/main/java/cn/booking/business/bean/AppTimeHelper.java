@@ -10,7 +10,11 @@ import cn.sdk.bean.BaseBean;
  * @author Mbenben
  *
  */
-public class AppTimeHelper extends BaseBean implements Serializable {
+public class AppTimeHelper implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5714034755398158276L;
 	/**
 	 * 预约时间段
 	 */

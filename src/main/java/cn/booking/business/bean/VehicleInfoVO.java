@@ -10,7 +10,11 @@ import cn.sdk.bean.BaseBean;
  * @author Mbenben
  *
  */
-public class VehicleInfoVO extends BaseBean implements Serializable{
+public class VehicleInfoVO implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 329879863316540978L;
 	/**
 	 * 预约号
 	 */
