@@ -4,24 +4,18 @@ import java.io.Serializable;
 
 import org.apache.commons.lang.builder.ReflectionToStringBuilder;
 
-<<<<<<< Updated upstream
 import com.alibaba.fastjson.JSON;
 
 import cn.sdk.bean.BaseBean;
 
-=======
->>>>>>> Stashed changes
 public class BusinessTypeVO implements Serializable {
 
-	
 	/**
 	 * 
 	 */
-<<<<<<< Updated upstream
+
 	private static final long serialVersionUID = -2279784740624919293L;
-=======
-	private static final long serialVersionUID = 1L;
->>>>>>> Stashed changes
+
 	/**
 	 * 业务类型ID
 	 */
