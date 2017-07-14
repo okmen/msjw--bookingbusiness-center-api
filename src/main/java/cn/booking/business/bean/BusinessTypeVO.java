@@ -1,27 +1,27 @@
 package cn.booking.business.bean;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-/**
- * 业务类型
- * @author Mbenben
- *
- */
-import java.util.List;
 
 import org.apache.commons.lang.builder.ReflectionToStringBuilder;
 
+<<<<<<< Updated upstream
 import com.alibaba.fastjson.JSON;
 
 import cn.sdk.bean.BaseBean;
 
+=======
+>>>>>>> Stashed changes
 public class BusinessTypeVO implements Serializable {
 
 	
 	/**
 	 * 
 	 */
+<<<<<<< Updated upstream
 	private static final long serialVersionUID = -2279784740624919293L;
+=======
+	private static final long serialVersionUID = 1L;
+>>>>>>> Stashed changes
 	/**
 	 * 业务类型ID
 	 */

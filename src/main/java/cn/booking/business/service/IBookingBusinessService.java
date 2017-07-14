@@ -5,6 +5,7 @@ import java.util.List;
 import cn.booking.business.bean.AppTimeHelper;
 import cn.booking.business.bean.BusinessTypeVO;
 import cn.booking.business.bean.CarTypeVO;
+import cn.booking.business.bean.CreateDriveinfoVo;
 import cn.booking.business.bean.CreateVehicleInfoVo;
 import cn.booking.business.bean.DriveInfoVO;
 import cn.booking.business.bean.IdTypeVO;
@@ -101,7 +102,13 @@ public interface IBookingBusinessService{
 	 * @throws
 	 */
 	public BaseBean createVehicleInfo(CreateVehicleInfoVo vehicleInfoVo)throws Exception;
-
+	/**
+	 * 驾驶证预约信息写入
+	 * @param createDriveinfoVo
+	 * @return
+	 * @throws Exception
+	 */
+	public BaseBean createDriveinfo(CreateDriveinfoVo createDriveinfoVo)throws Exception;
 	/**
 	 * 取消预约
 	 * @param businessType 业务类型 必填 ‘1’驾驶证业务 ‘2’机动车业务
