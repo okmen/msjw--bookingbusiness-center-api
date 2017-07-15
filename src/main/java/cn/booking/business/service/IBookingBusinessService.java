@@ -6,6 +6,7 @@ import cn.booking.business.bean.AppTimeHelper;
 import cn.booking.business.bean.BusinessTypeVO;
 import cn.booking.business.bean.CarTypeVO;
 import cn.booking.business.bean.CreateDriveinfoVo;
+import cn.booking.business.bean.CreateTemporaryLicenseVehicleInfoVo;
 import cn.booking.business.bean.CreateVehicleInfoVo;
 import cn.booking.business.bean.DriveInfoVO;
 import cn.booking.business.bean.IdTypeVO;
@@ -140,4 +141,12 @@ public interface IBookingBusinessService{
 	 */
 	public VehicleInfoVO getVehicleInfo(String bookerNumber,String idNumber,String platNumber,String businessTypeId,String organizationId)throws Exception;
 
+	/**
+	 * 核发临牌
+	 * @Description: TODO(核发临牌)
+	 * @param vo 核发临牌Vo
+	 * @return
+	 * @throws Exception
+	 */
+	public BaseBean createTemporaryLicenseVehicleInfo(CreateTemporaryLicenseVehicleInfoVo vo)throws Exception;
 }
