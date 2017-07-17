@@ -59,12 +59,12 @@ public class CreateTemporaryLicenseVehicleInfoVo implements Serializable {
 	private String bookerIdNumber;	//预约人身份证号码*
 	private String bookerType;		//预约方式* ‘0’本人
 	private String rzjs;			//认证角色* ‘2’企业星级用户，其他，非企业星级用户
-	private String arg0;			//手机号
-	private String arg1;			//短信验证码
-	private String arg2;			//保留字段2*
-	private String arg3;			//保留字段3*
-	private String arg4;			//保留字段4*
-	private String arg5;			//保留字段5*
+	private String bookerMobile;	//手机号
+	private String msgNumber;		//短信验证码
+	private String arg2;			//保留字段*
+	private String arg3;			//保留字段*
+	private String arg4;			//保留字段*
+	private String arg5;			//保留字段*
 	
 	public String getOrgId() {
 		return orgId;
@@ -186,17 +186,17 @@ public class CreateTemporaryLicenseVehicleInfoVo implements Serializable {
 	public void setRzjs(String rzjs) {
 		this.rzjs = rzjs;
 	}
-	public String getArg0() {
-		return arg0;
+	public String getBookerMobile() {
+		return bookerMobile;
 	}
-	public void setArg0(String arg0) {
-		this.arg0 = arg0;
+	public void setBookerMobile(String bookerMobile) {
+		this.bookerMobile = bookerMobile;
 	}
-	public String getArg1() {
-		return arg1;
+	public String getMsgNumber() {
+		return msgNumber;
 	}
-	public void setArg1(String arg1) {
-		this.arg1 = arg1;
+	public void setMsgNumber(String msgNumber) {
+		this.msgNumber = msgNumber;
 	}
 	public String getArg2() {
 		return arg2;

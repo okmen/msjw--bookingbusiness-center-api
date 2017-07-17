@@ -23,6 +23,10 @@ public class CreateDriveinfoVo extends BaseBean implements Serializable{
 	private String bookerType;//预约方式
 	private String bookerMobile;//手机号码
 	private String msgNumber;//短信验证码
+	private String arg2;//保留字段2
+	private String arg3;//保留字段3
+	private String arg4;//保留字段4
+	private String arg5;//保留字段5
 	public String getOrgId() {
 		return orgId;
 	}
@@ -101,14 +105,37 @@ public class CreateDriveinfoVo extends BaseBean implements Serializable{
 	public void setMsgNumber(String msgNumber) {
 		this.msgNumber = msgNumber;
 	}
+	public String getArg2() {
+		return arg2;
+	}
+	public void setArg2(String arg2) {
+		this.arg2 = arg2;
+	}
+	public String getArg3() {
+		return arg3;
+	}
+	public void setArg3(String arg3) {
+		this.arg3 = arg3;
+	}
+	public String getArg4() {
+		return arg4;
+	}
+	public void setArg4(String arg4) {
+		this.arg4 = arg4;
+	}
+	public String getArg5() {
+		return arg5;
+	}
+	public void setArg5(String arg5) {
+		this.arg5 = arg5;
+	}
 	@Override
 	public String toString() {
 		return "CreateDriveinfoVo [orgId=" + orgId + ", businessTypeId=" + businessTypeId + ", name=" + name
 				+ ", idTypeId=" + idTypeId + ", idNumber=" + idNumber + ", mobile=" + mobile + ", appointmentDate="
 				+ appointmentDate + ", appointmentTime=" + appointmentTime + ", bookerName=" + bookerName
 				+ ", bookerIdNumber=" + bookerIdNumber + ", bookerType=" + bookerType + ", bookerMobile=" + bookerMobile
-				+ ", msgNumber=" + msgNumber + "]";
+				+ ", msgNumber=" + msgNumber + ", arg2=" + arg2 + ", arg3=" + arg3 + ", arg4=" + arg4 + ", arg5=" + arg5
+				+ "]";
 	}
-
-	
 }

@@ -31,9 +31,9 @@ public class CreateVehicleInfoVo implements Serializable{
 	private String indexType;		//指标类型  转移登记（市内过户）,机动车注册登记,机动车转移登记（转入），选车辆型号（arg0）K31,K32,K33,K34,K41,K42,K43 小型、微型汽车，需要验证指标
 	private String indexNo;		//指标号   转移登记（市内过户）,机动车注册登记,机动车转移登记（转入），选车辆型号（arg0）K31,K32,K33,K34,K41,K42,K43 小型、微型汽车，需要验证指标
 	private String useCharater;	//使用性质
-	private String arg0;	//车辆型号 
-	private String arg1;	//手机号码  获取短信验证码的手机号
-	private String arg2;	//短信验证码  发送短信获得的6位数验证码
+	private String modelName;	//车辆型号 
+	private String bookerMobile;	//手机号码  获取短信验证码的手机号
+	private String msgNumber;	//短信验证码  发送短信获得的6位数验证码
 	public String getOrgId() {
 		return orgId;
 	}
@@ -148,23 +148,23 @@ public class CreateVehicleInfoVo implements Serializable{
 	public void setUseCharater(String useCharater) {
 		this.useCharater = useCharater;
 	}
-	public String getArg0() {
-		return arg0;
+	public String getModelName() {
+		return modelName;
 	}
-	public void setArg0(String arg0) {
-		this.arg0 = arg0;
+	public void setModelName(String modelName) {
+		this.modelName = modelName;
 	}
-	public String getArg1() {
-		return arg1;
+	public String getBookerMobile() {
+		return bookerMobile;
 	}
-	public void setArg1(String arg1) {
-		this.arg1 = arg1;
+	public void setBookerMobile(String bookerMobile) {
+		this.bookerMobile = bookerMobile;
 	}
-	public String getArg2() {
-		return arg2;
+	public String getMsgNumber() {
+		return msgNumber;
 	}
-	public void setArg2(String arg2) {
-		this.arg2 = arg2;
+	public void setMsgNumber(String msgNumber) {
+		this.msgNumber = msgNumber;
 	}
 	
 }
