@@ -8,24 +8,28 @@ public class CarModelVo implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private String code;
-	private String name ;
-	public String getCode() {
-		return code;
+	private String id;//车辆型号代号
+	private String str;//车辆型号名称
+	public String getId() {
+		return id;
 	}
-	public void setCode(String code) {
-		this.code = code;
+	public void setId(String id) {
+		this.id = id;
 	}
-	public String getName() {
-		return name;
+	public String getStr() {
+		return str;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setStr(String str) {
+		this.str = str;
+	}
+	public static long getSerialversionuid() {
+		return serialVersionUID;
 	}
 	@Override
 	public String toString() {
-		return "CarModelVo [code=" + code + ", name=" + name + "]";
+		return "CarModelVo [id=" + id + ", str=" + str + "]";
 	}
+
 	
 	
 }
