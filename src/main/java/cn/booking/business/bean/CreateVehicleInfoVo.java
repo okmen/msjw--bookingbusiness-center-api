@@ -166,5 +166,6 @@ public class CreateVehicleInfoVo implements Serializable{
 	public void setMsgNumber(String msgNumber) {
 		this.msgNumber = msgNumber;
 	}
+
 	
 }

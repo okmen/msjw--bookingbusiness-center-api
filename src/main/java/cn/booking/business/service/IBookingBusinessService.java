@@ -65,7 +65,7 @@ public interface IBookingBusinessService{
 	 * @return
 	 * @throws Exception
 	 */
-	public List<AppTimeHelper> getAppTimes(String date,String orgId,String businessTypeId,String carTypeId,String optlittleCar)throws Exception;
+	public BaseBean getAppTimes(String date,String orgId,String businessTypeId,String carTypeId,String optlittleCar)throws Exception;
 	/**
 	 * 获取可预约日期 
 	 * @param orgId 预约单位ID  必填
