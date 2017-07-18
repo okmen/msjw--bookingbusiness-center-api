@@ -4,9 +4,6 @@ import java.io.Serializable;
 
 import org.apache.commons.lang.builder.ReflectionToStringBuilder;
 
-import com.alibaba.fastjson.JSON;
-
-import cn.sdk.bean.BaseBean;
 public class BusinessTypeVO implements Serializable {
 
 	/**
