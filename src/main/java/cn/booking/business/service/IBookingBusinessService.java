@@ -4,18 +4,40 @@ import java.util.List;
 
 import cn.booking.business.bean.AppTimeHelper;
 import cn.booking.business.bean.BusinessTypeVO;
+import cn.booking.business.bean.CarTypePo;
 import cn.booking.business.bean.CarTypeVO;
 import cn.booking.business.bean.CreateDriveinfoVo;
 import cn.booking.business.bean.CreateTemporaryLicenseVehicleInfoVo;
 import cn.booking.business.bean.CreateVehicleInfoVo;
 import cn.booking.business.bean.DriveInfoVO;
+import cn.booking.business.bean.IdCardTypePo;
 import cn.booking.business.bean.IdTypeVO;
 import cn.booking.business.bean.OrgVO;
 import cn.booking.business.bean.SmsInfoVO;
+import cn.booking.business.bean.UseNaturePo;
 import cn.booking.business.bean.VehicleInfoVO;
+import cn.booking.business.bean.VehicleNodelPo;
 import cn.sdk.bean.BaseBean;
 
 public interface IBookingBusinessService{
+	
+	
+	public int addBatchCarType(List<CarTypePo> carTypePos) throws Exception;
+	public int addBatchIdCardType(List<IdCardTypePo> idCardTypePos) throws Exception;
+	public int addBatchUseNature(List<UseNaturePo> useNaturePos) throws Exception;
+	public int addBatchVehicleNodel(List<VehicleNodelPo> vehicleNodelPos) throws Exception;
+	
+	public int deleteAllCarType() throws Exception;
+	public int deleteAllIdCardType() throws Exception;
+	public int deleteAllUseNature() throws Exception;
+	public int deleteAllVehicleNodel() throws Exception;
+	
+	
+	public List<CarTypePo> getAllCarType()throws Exception;
+	public List<IdCardTypePo> getAllIdCardType()throws Exception;
+	public List<UseNaturePo> getAllUseNature()throws Exception;
+	public List<VehicleNodelPo> getAllVehicleNodel()throws Exception;
+	
 	/**
 	 * 获取车辆类型列表
 	 */
