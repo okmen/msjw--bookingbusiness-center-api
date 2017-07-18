@@ -8,13 +8,11 @@ import cn.booking.business.bean.CarTypeVO;
 import cn.booking.business.bean.CreateDriveinfoVo;
 import cn.booking.business.bean.CreateTemporaryLicenseVehicleInfoVo;
 import cn.booking.business.bean.CreateVehicleInfoVo;
-import cn.booking.business.bean.DriveInfoVO;
 import cn.booking.business.bean.IdCardTypePo;
 import cn.booking.business.bean.IdTypeVO;
 import cn.booking.business.bean.OrgVO;
 import cn.booking.business.bean.SmsInfoVO;
 import cn.booking.business.bean.UseNaturePo;
-import cn.booking.business.bean.VehicleInfoVO;
 import cn.booking.business.bean.VehicleNodelPo;
 import cn.sdk.bean.BaseBean;
 
@@ -149,7 +147,7 @@ public interface IBookingBusinessService{
 	 * @return
 	 * @throws Exception
 	 */
-	public DriveInfoVO getDriveInfo(String bookerNumber,String idNumber,String businessTypeId,String organizationId)throws Exception;
+	public BaseBean getDriveInfo(String bookerNumber,String idNumber,String businessTypeId,String organizationId)throws Exception;
 	/**
 	 * 获取机动车预约信息 
 	 * @param bookerNumber 预约号  必填
@@ -160,7 +158,7 @@ public interface IBookingBusinessService{
 	 * @return
 	 * @throws Exception
 	 */
-	public VehicleInfoVO getVehicleInfo(String bookerNumber,String idNumber,String platNumber,String businessTypeId,String organizationId)throws Exception;
+	public BaseBean getVehicleInfo(String bookerNumber,String idNumber,String platNumber,String businessTypeId,String organizationId)throws Exception;
 
 	/**
 	 * 核发临牌
