@@ -5,7 +5,7 @@ import java.util.Date;
 
 import org.apache.commons.lang.builder.ReflectionToStringBuilder;
 /**
- * 车辆类型
+ * 车辆类型(后端调用车管所)
  * @author Mbenben
  *
  */

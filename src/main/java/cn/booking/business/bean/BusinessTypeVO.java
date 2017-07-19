@@ -35,7 +35,7 @@ public class BusinessTypeVO implements Serializable {
 	/**
 	 * 业务办理单位
 	 */
-	private Org org;
+	//private Org org;
 
 	
 	public String getId() {
@@ -88,14 +88,14 @@ public class BusinessTypeVO implements Serializable {
 	}
 
 
-	public Org getOrg() {
+	/*public Org getOrg() {
 		return org;
 	}
 
 
 	public void setOrg(Org org) {
 		this.org = org;
-	}
+	}*/
 
 
 	@Override

@@ -5,7 +5,7 @@ import java.util.Date;
 
 import org.apache.commons.lang.builder.ReflectionToStringBuilder;
 /**
- * 使用性质
+ * 使用性质(前端写死，没有接口)
  * @author Mbenben
  *
  */

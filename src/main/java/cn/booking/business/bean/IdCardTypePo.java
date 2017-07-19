@@ -5,7 +5,7 @@ import java.util.Date;
 
 import org.apache.commons.lang.builder.ReflectionToStringBuilder;
 /**
- * 证件类型
+ * 证件类型(后端提供)
  * @author Mbenben
  *
  */
