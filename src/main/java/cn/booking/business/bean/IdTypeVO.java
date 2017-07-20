@@ -11,19 +11,19 @@ import org.apache.commons.lang.builder.ReflectionToStringBuilder;
 public class IdTypeVO implements Serializable {
 	private static final long serialVersionUID = 1L;
 	/**
-	 * 车辆类型ID
+	 * 证件类型ID
 	 */
 	private String id;
 	/**
-	 * 车辆类型CODE
+	 * 证件类型CODE
 	 */
 	private String code;
 	/**
-	 * 车辆类型名称
+	 * 证件类型名称
 	 */
 	private String name;
 	/**
-	 * 车辆类型说明
+	 * 证件类型说明
 	 */
 	private String description;
 
