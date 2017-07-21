@@ -1,6 +1,7 @@
 package cn.booking.business.service;
 
 import java.util.List;
+import java.util.Map;
 
 import cn.booking.business.bean.BusinessTypeVO;
 import cn.booking.business.bean.CarTypePo;
@@ -10,8 +11,10 @@ import cn.booking.business.bean.CreateTemporaryLicenseVehicleInfoVo;
 import cn.booking.business.bean.CreateVehicleInfoVo;
 import cn.booking.business.bean.IdCardTypePo;
 import cn.booking.business.bean.IdTypeVO;
+import cn.booking.business.bean.IndexTypeVo;
 import cn.booking.business.bean.OrgVO;
 import cn.booking.business.bean.SmsInfoVO;
+import cn.booking.business.bean.UseCharater;
 import cn.booking.business.bean.UseNaturePo;
 import cn.booking.business.bean.VehicleNodelPo;
 import cn.sdk.bean.BaseBean;
@@ -34,7 +37,24 @@ public interface IBookingBusinessService{
 	public List<IdCardTypePo> getAllIdCardType()throws Exception;
 	public List<UseNaturePo> getAllUseNature()throws Exception;
 	public List<VehicleNodelPo> getAllVehicleNodel()throws Exception;
-	
+	/**
+	 * 车辆型号列表
+	 * @return
+	 * @throws Exception
+	 */
+	public Map<String, String> getCarModelArray()throws Exception;
+	/**
+	 * 获取使用性质
+	 * @return
+	 * @throws Exception
+	 */
+	public List<UseCharater> getUseCharater()throws Exception;
+	/**
+	 * 获取指标类型
+	 * @return
+	 * @throws Exception
+	 */
+	public List<IndexTypeVo> getIndexTypes()throws Exception;
 	/**
 	 * 获取车辆类型列表
 	 */
