@@ -26,6 +26,10 @@ public class IdTypeVO implements Serializable {
 	 * 证件类型说明
 	 */
 	private String description;
+	/**
+	 * 证件类型id
+	 */
+	private String idcardTypeId;
 
 	public String getId() {
 		return id;
@@ -57,6 +61,14 @@ public class IdTypeVO implements Serializable {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public String getIdcardTypeId() {
+		return idcardTypeId;
+	}
+
+	public void setIdcardTypeId(String idcardTypeId) {
+		this.idcardTypeId = idcardTypeId;
 	}
 
 	@Override
