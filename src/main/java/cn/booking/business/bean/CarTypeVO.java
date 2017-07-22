@@ -27,6 +27,7 @@ public class CarTypeVO implements Serializable {
 	 * 车辆类型说明
 	 */
 	private String description;
+	private String carTypeId;
 
 	public String getId() {
 		return id;
@@ -58,6 +59,14 @@ public class CarTypeVO implements Serializable {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+	
+	public String getCarTypeId() {
+		return carTypeId;
+	}
+
+	public void setCarTypeId(String carTypeId) {
+		this.carTypeId = carTypeId;
 	}
 
 	@Override
