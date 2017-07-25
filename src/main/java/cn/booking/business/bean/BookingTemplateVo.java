@@ -79,7 +79,7 @@ public class BookingTemplateVo implements Serializable{
 		return sBuffer.toString();
 	}
 	
-	private Integer type; //业务类型  0-驾驶证业务，1-机动车业务
+	private Integer type; //业务类型   1-办理类，2-预约类
 	private String title; //具体业务类型,例如 核发校车标牌
 	private String plateType; //号牌种类
 	private String numberPlate; //号牌号码
@@ -92,6 +92,8 @@ public class BookingTemplateVo implements Serializable{
 	private String appointmentDate; //预约日期
 	private String appointmentTime; //预约时间
 	private String name; //预约人
+	private String platNumber; //号牌号码
+	private String carTypeName; //车辆类型
 	
 	public Integer getType() {
 		return type;
@@ -199,16 +201,45 @@ public class BookingTemplateVo implements Serializable{
 
 	/**
 	 * 
-	 * @param type 业务类型 0-驾驶证业务，1-机动车业务
+	 * @param type 业务类型  1-办理类，2-预约类
 	 * @param title 具体业务类型,例如 六年免检申请
 	 * @param waterNumber 流水号码
-	 * @param appTime 预约时间
-	 * @param address 预约地点
+	 * @param orgName 预约地点
+	 * @param orgAddr 预约地址
+	 * @param appointmentDate 预约日期
+	 * @param appointmentTime 预约时间
+	 * @param name 预约人
 	 */
 	public BookingTemplateVo(Integer type, String title, String waterNumber, String orgName, String orgAddr, 
 			String appointmentDate, String appointmentTime, String name) {
 		this.type = type;
 		this.title = title;
+		this.waterNumber = waterNumber;
+		this.orgName = orgName;
+		this.orgAddr = orgAddr;
+		this.appointmentDate = appointmentDate;
+		this.appointmentTime = appointmentTime;
+		this.name = name;
+	}
+	/**
+	 * 
+	 * @param type 业务类型  1-办理类，2-预约类
+	 * @param title 具体业务类型,例如 六年免检申请
+	 * @param platNumber 号牌号码
+	 * @param carTypeName 车辆类型
+	 * @param waterNumber 流水号码
+	 * @param orgName 预约地点
+	 * @param orgAddr 预约地址
+	 * @param appointmentDate 预约日期
+	 * @param appointmentTime 预约时间
+	 * @param name 预约人
+	 */
+	public BookingTemplateVo(Integer type, String title, String waterNumber, String platNumber, String carTypeName, String orgName, String orgAddr, 
+			String appointmentDate, String appointmentTime, String name) {
+		this.type = type;
+		this.title = title;
+		this.platNumber = platNumber;
+		this.carTypeName = carTypeName;
 		this.waterNumber = waterNumber;
 		this.orgName = orgName;
 		this.orgAddr = orgAddr;
