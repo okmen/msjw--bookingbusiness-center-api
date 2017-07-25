@@ -87,8 +87,11 @@ public class BookingTemplateVo implements Serializable{
 	private String effectiveTime; //有效时间
 	private String waterNumber; //流水号码
 	private String bidDate; //申办日期
-	private String appTime; //预约时间
-	private String address; //预约地点
+	private String orgName; //预约地点
+	private String orgAddr; //预约地址
+	private String appointmentDate; //预约日期
+	private String appointmentTime; //预约时间
+	private String name; //预约人
 	
 	public Integer getType() {
 		return type;
@@ -154,20 +157,44 @@ public class BookingTemplateVo implements Serializable{
 		this.bidDate = bidDate;
 	}
 
-	public String getAppTime() {
-		return appTime;
+	public String getOrgName() {
+		return orgName;
 	}
 
-	public void setAppTime(String appTime) {
-		this.appTime = appTime;
+	public void setOrgName(String orgName) {
+		this.orgName = orgName;
 	}
 
-	public String getAddress() {
-		return address;
+	public String getOrgAddr() {
+		return orgAddr;
 	}
 
-	public void setAddress(String address) {
-		this.address = address;
+	public void setOrgAddr(String orgAddr) {
+		this.orgAddr = orgAddr;
+	}
+
+	public String getAppointmentDate() {
+		return appointmentDate;
+	}
+
+	public void setAppointmentDate(String appointmentDate) {
+		this.appointmentDate = appointmentDate;
+	}
+
+	public String getAppointmentTime() {
+		return appointmentTime;
+	}
+
+	public void setAppointmentTime(String appointmentTime) {
+		this.appointmentTime = appointmentTime;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	/**
@@ -178,12 +205,16 @@ public class BookingTemplateVo implements Serializable{
 	 * @param appTime 预约时间
 	 * @param address 预约地点
 	 */
-	public BookingTemplateVo(Integer type, String title, String waterNumber, String appTime, String address) {
+	public BookingTemplateVo(Integer type, String title, String waterNumber, String orgName, String orgAddr, 
+			String appointmentDate, String appointmentTime, String name) {
 		this.type = type;
 		this.title = title;
 		this.waterNumber = waterNumber;
-		this.appTime = appTime;
-		this.address = address;
+		this.orgName = orgName;
+		this.orgAddr = orgAddr;
+		this.appointmentDate = appointmentDate;
+		this.appointmentTime = appointmentTime;
+		this.name = name;
 	}
 	/**
 	 * 
