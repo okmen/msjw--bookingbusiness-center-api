@@ -37,6 +37,12 @@ public interface IBookingBusinessService{
 	public List<IdCardTypePo> getAllIdCardType()throws Exception;
 	public List<UseNaturePo> getAllUseNature()throws Exception;
 	public List<VehicleNodelPo> getAllVehicleNodel()throws Exception;
+	
+	/**
+	 * 获取域名地址
+	 * @return
+	 */
+	public String getTemplateSendUrl();
 	/**
 	 * 车辆型号列表
 	 * @return
