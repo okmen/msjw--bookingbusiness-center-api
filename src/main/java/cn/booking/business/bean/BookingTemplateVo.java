@@ -199,6 +199,22 @@ public class BookingTemplateVo implements Serializable{
 		this.name = name;
 	}
 
+	public String getPlatNumber() {
+		return platNumber;
+	}
+
+	public void setPlatNumber(String platNumber) {
+		this.platNumber = platNumber;
+	}
+
+	public String getCarTypeName() {
+		return carTypeName;
+	}
+
+	public void setCarTypeName(String carTypeName) {
+		this.carTypeName = carTypeName;
+	}
+
 	/**
 	 * 
 	 * @param type 业务类型  1-办理类，2-预约类
