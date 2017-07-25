@@ -32,7 +32,13 @@ public class AppointmentPo implements Serializable{
 	public void setCreateDate(Date createDate) {
 		this.createDate = createDate;
 	}
+	public AppointmentPo() {
+	}
 	
+	public AppointmentPo(String appointment, Date createDate) {
+		this.appointment = appointment;
+		this.createDate = createDate;
+	}
 	@Override
 	public String toString() {
 		return ReflectionToStringBuilder.toString(this);
