@@ -83,7 +83,7 @@ public interface IBookingBusinessService{
 	 * @return
 	 * @throws Exception
 	 */
-	public List<IdTypeVO> getIdTypes(String businessTypeId,String arg0,String arg1)throws Exception;
+	public List<IdTypeVO> getIdTypes(String businessTypeId,String arg0,String arg1,String type)throws Exception;
 	/**
 	 * 根据单位ID获取单位详细信息
 	 * @param orgId 单位ID 不能为空
