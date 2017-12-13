@@ -44,6 +44,11 @@ public interface IBookingBusinessService{
 	 */
 	public String getTemplateSendUrl();
 	/**
+	 * 获取民生警务结果页域名地址
+	 * @return
+	 */
+	public String getMsjwTemplateSendUrl();
+	/**
 	 * 车辆型号列表
 	 * @return
 	 * @throws Exception
