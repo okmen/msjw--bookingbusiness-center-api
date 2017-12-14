@@ -49,6 +49,11 @@ public interface IBookingBusinessService{
 	 */
 	public String getMsjwTemplateSendUrl();
 	/**
+	 * 获取民生警务预约类模板id
+	 * @return
+	 */
+	public String getMsjwBookTemplateId();
+	/**
 	 * 车辆型号列表
 	 * @return
 	 * @throws Exception
